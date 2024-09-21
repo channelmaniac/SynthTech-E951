@@ -1,0 +1,61 @@
+BoM so far: (All Mouser part numbers.)
+
+Connectors: 
+1x 571-6404566 - 6 pin TE Connectivity Header
+1x 571-6404563 - 3 pin TE Connectivity Header
+1x 200-TST10801TD - 16 pin (2x8) .100 shrouded header
+
+Capacitors:
+All caps are ceramic. No Tantalum or Electrolytic. Small capacitors are 0603. Large filtering caps are 0805
+2x 603-CC603JRNPO8BN102 - 0.001uf (1nf) - C8, C11
+9x 603-CC603JRX7R8BB104 - 0.1uf (100nf) - C1, C2, C3, C5, C6, C7, C9, C10, C16
+5x 603-CC603KRX5R8BB225 - 2.2uf - C4, C12, C13, C17, C18
+2x 187-CL21A106KAYNNNG - 10uf - C14, C15
+
+
+Coils:
+2x 81-BLM21P221SG - Ferrite Bead.
+1x 81-BLM11A601S - Ferrite Bead.
+
+Hardware:
+3x 534-8844 - 4mm lock-in nylon support
+
+Potentiometers:
+1x 100K B-type 9mm potentiometer
+
+Resistors:
+All resistors are 0805 except for the 0 ohm jumpers for the display which are 0603
+2x 603-RC0603FR-100RL - 0 ohm - R9, R12 or R8, R13 (for configuring OLED support)
+1x 603-RC0805FR-07100RL - 100 ohm - R22
+4x 603-RC0805FR-071KP - 1K - R2, R11, R14, R25
+2x 603-RC0805FR-074K7L - 4.7K - R3, R4
+8x 603-RC0805FR-0710KP - 10K - R1, R5, R6, R17, R19, R20, R21, R26
+3x 603-AC0805FR-0720KL - 20K - R7, R16, R23
+1x 652-CR0805FX-3012ELF - 30.1K - R18
+1x 603-RC0805FR-0760K4L - 60.4K - R15
+2x 603-AC0805FR-07750KL - 750K - R10, R24
+
+Semiconductors:
+1x 595-UA78M33CDCYR - 3.3 Volt Reg.
+1x 511-78L05ABU - 5 Volt Reg.
+2x 926-LM311MX/NOPB - LM311
+1x 579-MCP6001T-E/OT - MCP6001
+2x 511-STPS1L30U - Schottky Diode
+1x 621-LM4040B25QFTA - Voltage Reference Diode
+1x 611-STM32F030F4P6 - Microcontroller
+
+-------
+
+Miscellaneous parts: (not at Mouser)
+
+To mount PCB to panel (hole next to display on front panel)
+1x Countersunk screw - M3 Metric (Length?)
+1x M3 spacer
+1x M3 washer
+1x M3 lock washer
+1x M3 nut
+
+1x - NKK MB2411 .290 push button momentary switch - Red
+2x - NKK MB2411 .290 push button momentary switch - Black
+3x - Doepfer style jacks
+1x .96" OLED display
