@@ -3,7 +3,7 @@ What I learned building mine...
 
 The repository for the Synthesis Technologies E951 Looping Expander at https://github.com/emeb/SynthTech-E951 is incomplete. NONE of their files are
 replicated or included here. Go to their Github pages for their files and information on this module. There you will find a front panel layout, 
-gerbers for the main PCB and switch PCB, and code for it.
+gerbers and schematics for the main PCB and switch PCB, and code for it.
 
 Here you will eventually find the missing the input jack PCB, display PCB, Bill of Materials, and information on sizes of components needed to build.
 
