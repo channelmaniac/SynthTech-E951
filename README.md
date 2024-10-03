@@ -1,5 +1,5 @@
 # SynthTech-E951 - My take...
-What I learned building mine... Updated 10/2/2024, or 2/10/2024 for ROW.
+What I learned building mine... Updated 10/3/2024, or 3/10/2024 for ROW.
 
 The repository for the Synthesis Technologies E951 Looping Expander at https://github.com/emeb/SynthTech-E951 is incomplete. NONE of their files are
 replicated or included here. Go to their Github pages for their files and information on this module. There you will find a front panel layout, 
@@ -10,6 +10,8 @@ Here you will eventually find the missing the input jack PCB, display PCB, Bill 
 I laid out the front panel in Front Panel Designer then created one in KiCAD. Those files are in the Hardware folder for you to decide if you want to
 order a front panel from the folks who made FPD or if you want to order a PCB from your favorite fab. I used JLCPCB and ordered the front panel PCB
 in aluminum with black mask and white silk screen. The mockup is on here and I'll add a photo of the panel after they arrive from China.
+
+**NOTE** I updated the front panel to have the proper font and logo. Will upload those new files after the panels arrive from China.
 
 I created a BoM for Mouser. I live across the metromess from them so I get parts next day if I order early enough. Take off the 3 digits and the dash
 from the part numbers to search them elsewhere.
