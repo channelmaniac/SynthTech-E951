@@ -1,14 +1,14 @@
 Welcome to the hardware folder.
 
-**THESE FRONT PANEL FILES ARE STILL IN ALPHA STAGE!** I will remove this comment and note when they are ready to be
-used to order after finishing building a module successfully. 
+**THE FRONT PANEL FILES FOR THE THONK JACK PCB ARE STILL IN ALPHA STAGE!** I will remove this comment and note when
+they are ready to be used to order after finishing building a module successfully. 
 
-**Update:** Received a jack PCB and some NKK swtiches and installed them. While I still need to obtain and verify
-the OLED display adapter PCB fit, all the other holes line up to the three jacks, the three NKK switches, the 
-toggle switch, the mounting screw, and the 100K potentiometer.
+**Update:** Received the Thonk jack PCB and installed it. The jacks do not line up with the front panel so the 
+panel is undergoing another revision to adjust the holes to fit. The Doepfer version is done and everything lines
+up and fits properly. 
 
-Here you'll find the DXF files for layout of the front panel and the FPD panel to order from the creators of the
-Front Panel Designer software. Also here are gerbers to order a PCB version of it from your favorite fab. I used 
+Here you'll find the DXF files for both layouts of the front panel and the FPD panel to order from the creators of
+the Front Panel Designer software. Also here are gerbers to order a PCB version of it from your favorite fab. I used 
 JLCPCB for an aluminum PCB with black mask and white silk screen.
 
 Not everything can be sourced at Mouser. You'll see those items down at the bottom of the BoM. As I build mine and
@@ -19,5 +19,6 @@ All components are SMT with the exception of the shrouded header, pin headers, i
 All resistors are 0805 with the exception of the zero ohm ones which are 0603. All capacitors are ceramic and 0603
 with the exception of the 10uf which are 0805. There are no tantalum or electrolytic capacitors in this module.
 
-**NOTE:** the first version of DXF, FPD, and Gerbers posted had an error in which the top mounting holes for the
-module were 3mm too low. That has been addressed.
+**NOTE:** The Doepfer style verstion of front panel is done and verified, however, there is no PCB file for it. I
+made it as I had traded for 5 PCBs. The rest of the modules I'm building will use the Thonk jack PCB I laid out.
+It is not fully verified yet, hence not loaded here at this time.
