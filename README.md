@@ -1,5 +1,5 @@
 # SynthTech-E951 - My take...
-What I learned building mine... Updated 10/3/2024, or 3/10/2024 for ROW.
+What I learned building mine... Updated 10/17/2024, or 17/10/2024 for ROW.
 
 The repository for the Synthesis Technologies E951 Looping Expander at https://github.com/emeb/SynthTech-E951 is incomplete. NONE of their files are
 replicated or included here. Go to their Github pages for their files and information on this module. There you will find a front panel layout, 
