@@ -11,7 +11,8 @@ I laid out the front panel in Front Panel Designer then created one in KiCAD. Th
 order a front panel from the folks who made FPD or if you want to order a PCB from your favorite fab. I used JLCPCB and ordered the front panel PCB
 in aluminum with black mask and white silk screen. The mockup is on here and I'll add a photo of the panel after they arrive from China.
 
-**NOTE** I updated the front panel to have the proper font and logo. Will upload those new files after the panels arrive from China.
+**NOTE** I updated the front panel to have the proper font and logo. The Doepfer Jack version front panel is done and files updated. The Thonk Jack
+version is undergoing another revision.
 
 I created a BoM for Mouser. I live across the metromess from them so I get parts next day if I order early enough. Take off the 3 digits and the dash
 from the part numbers to search them elsewhere.
