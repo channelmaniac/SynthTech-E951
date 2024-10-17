@@ -12,8 +12,8 @@ Coils:
 1x 81-BLM11A601S - Ferrite Bead.
 
 Connectors: 
-1x 571-6404563 - 3 pin TE Connectivity Header
-2x 571-3-640441-3 - 3 pin TE Connectivity Plug, insulation displacement
+1x 571-6404563 - 3 pin TE Connectivity Header (Connect to E950)
+2x 571-3-640441-3 - 3 pin TE Connectivity Plug, insulation displacement (Cable to connect to E950)
 1x 200-TST10801TD - 16 pin (2x8) .100 shrouded header
 
 Hardware:
@@ -61,9 +61,11 @@ M2.5 x .45 5mm flat head countersunk screw, 15mm long 4.5mm hex standoff threade
 
 Countersink drill bit to finish hole for screw
 
-1x each 24ga stranded yellow, white, and black wire, 4.25" long
-1x - 1x6-pin .100 pin header
+1x each 24ga stranded yellow, white, and black wire, 4.25" long (Cable to connect to E950)
+1x - 1x6-pin .100 pin header (Programming)
 1x - 1x3-pin .100 pin header
+1x - 1x5-pin .100 pin header (Jack PCB to main PCB)
+2x - 1x4-pin .100 pin header (OLED PCB to main PCB)
 1x - NKK MB2411 .290 push button momentary switch - Red
 2x - NKK MB2411 .290 push button momentary switch - Black
 3x - Doepfer style jacks OR 3x Thonkiconn depending on Jack PCB and front panel used
