@@ -29,4 +29,8 @@ create a new switch PCB at a later date to use a cheaper brand, currently manufa
 at Tayda costing a whopping $.69 USD will not work. They are require far too much force to activate and will flex the PCBs. Most of the C&K push 
 button momentary switches I've tried also require too much force to activate. One series looks promising and will be looked into at a later date.
 
+License? Well, all of this is building on something Synthesis Technologies created. I'm not doing anythign in software and just had to pick a license
+when creating the repository. They would love it if someone would update the OLED display and use something better. They would also love it if 
+addtional features and functionality were added to the module. If you use their work, give them credit. If you use my work please give me credit.
+
 I have spare PCBs and may put some for sale as sets in the future out on the Arcadecomponents web site.
