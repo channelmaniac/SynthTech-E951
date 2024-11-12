@@ -1,0 +1,158 @@
+Assembling the E951
+
+For this you will need appropriate flux, solder, and magnification. With the tiny size of the legs on 
+the MPU, this is not a kit for beginners. Goof Off (in the metal can) or 90+% IPA can be used with 
+Q-Tips to remove flux after soldering. 
+
+When assembling, I used GC Chemicals' liquid rosin flux, leaded solder, and a jeweler's loupe. A 
+blunt-tipped soldering aid can be used with a tiny amount of rosin flux to lift the component into 
+place on the rosin prepped solder pads. Use the other end of the soldering aid to align the component
+to the pads. A cut-off Q-Tip stick was used to carefully hold the tiny component in place while
+soldering one side into place using a hot soldering iron with a tiny bit of solder on the tip. I 
+used a 1/8" chisel tipped soldering iron to solder everything into place, using the pointed corner of
+the tip to solder the IC legs. However, use whatever makes you comfortable when assembling.
+
+Start with the main PCB and install all the ICs first, in no particular order: U1, U2, U3, U4, and U5.
+	Double check alignment with pads and proper placement of pin 1 before soldering!
+
+Install the reference diode, D3.
+
+Next install all the SMT resistors EXCEPT R8, R9, R12, and R13.
+
+Now install these capacitors: 
+	.001uf (1nf): C8, C11
+	.1uf (100nf): C1, C2, C3, C5, C6, C7, C9, C10, C16
+
+Install the coil L2
+
+Install the remaining capacitors:
+	2.2uf: C4, C12, C13, C17, C18
+	10uf: C14, C15
+
+Install the coils at L1 and L3
+
+Next install the diodes at D1 and D2. Be careful to install them properly with respect to the stripe.
+
+Grab the OLED display and look at the pinout of the 4 pin connector. There are two different pinouts
+of this module for sale and the 0603 resistors connect power and ground to the needed pins on J2.
+	If: Vcc, GND, SCL, SDA then install R8 and R13 - DO NOT install R9 and R12
+	If: GND, Vcc, SCL, SDA then install R9 and R12 - DO NOT install R8 and R13
+
+Install the pin headers for power (JP1), programming (H1), and connectivity to the E950 (J1). J5 is
+not used and the holes can simply be left open or soldered in, your choice. Now flip the module over
+and solder in the 4 pin headers at J2 and J3 for mouting the OLED sub-board where indicated on the 
+silkscreen.
+
+With the module still flipped, install potentiometer VR1 and toggle switch SW1. Install the standoff
+and mounting screw. Set the main PCB aside.
+
+Take the switch PCB and insert the 3 NKK push button switches. Be careful to align the switch function
+pins (NC, O, C) to the marked silk-screen holes on the PCB. Before soldering, carefully lay the front
+panel over the switches and they will slot into the holes to align them before soldering into place.
+Install the 5 pin header, being sure to place it in the silkscreened area on the PCB and not on the 
+back side. Insert the 3 nylon standoffs then set the PCB and front panel aside.
+
+If your OLED display came with mounting hardware, mount it to the OLED PCB and solder it into place.
+If it did not come with mounting hardware, carefully hold it parallel to the OLED PCB standing off
+from the PCB for most of the pin length to the OLED PCB. Solder the outer two pins into place and
+verify it's parallel to the OLED PCB and is square to it - use the white silkscreen on the PCB to 
+ensure the display isn't tilted to one side. Now be sure to solder the remaining two pins. This
+step is easy to miss, resulting in needing to desolder and remove the OLED PCB to reach those pins 
+to solder them.
+
+Take the front panel and use a black permanent marker (Sharpie brand works well) and darken the 
+sides of the hole for the display to hide the shiny aluminum. Now countersink the hole for mounting
+the module to the front panel if you're using countersink type screws. 
+
+Place one of the nuts onto the toggle switch then place the OLED display PCB over the pins on the 
+main PCB, with the pins for the OLED display toward the top of the module. Install the counter-
+sink screw into the front panel to mount it to the PCB. Set the nut on the toggle switch to place
+the front panel level over the main PCB. Align the OLED display to the front of the module and
+carefully solder it into place using the 4 pins at the top of the module. Remove the front panel
+and solder the other four pins to finish mounting the OLED display PCB to the main PCB. Remove 
+the protective film from the display. 
+
+Mount the switch PCB to the back side of the main PCB with the 4 standoffs. Be careful to ensure
+the switches stick out the front side of the PCB along with the potentiometer and toggle switch.
+Space to get the soldering iron in to solder the header is very limited so remove the plastic caps
+from the switches before soldering the PCB into place along the 5 pin header. Reinstall the plastic
+caps on the switches when finished.
+
+Next, solder the Thonk jacks to the jack PCB. The manufacturer provided PCB layout for the jacks is
+slightly oversized, making the fit sloppy. Hold the jacks to the PCB and slide them towards the end
+away from the ground pin before soldering into place. This will help ensure a better fit of the 
+jacks to the front panel. Flip the PCB over and install the 9 pin header where indicated on the 
+silk screen.
+
+Loosely mount the jack PCB to the front panel with the pins toward the bottom of the module. Lay
+the front panel on top of the assembled main PCB and place the second nut over the toggle switch
+snugly and insert the countersink screw into place. Now solder the front panel to the main PCB.
+Tighten the mounting nuts for the jacks and the toggle switch.
+
+Install the knob onto the potentiometer to finish assembly.
+
+Now compile the code and install it onto the module. You are then ready to test.
+
+-------------
+
+Programming the E951 is easy with the proper tools. I used the STM32 Nucleo-64 PCB and the STM32
+ST-LINK Utility from ST to do the programming. This method simply works every time and even works
+to program the notoriously difficult Blue Pill modules using the optional 4-pin header on those.
+
+The Nucleo PCB has a detachable ST-Link programming header on the top of the PCB that is used to
+program other ST32 chips using the SWD connector. To prepare it for programming external devices:
+	Remove jumpers at CN3, CN11, and CN12
+	Remove any jumper at JP1 and JP4
+	Remove the jumpers from CN2
+
+Now connect your PC to the Nucleo board's USB connector. Open the STM32 ST-LINK Utility, go to the
+ST-LINK menu, and choose Firmware Update. Connect to the device and upgrade to the firmware version
+suggested. It may be a downgrade for your module and this is OK. You want the version with the
+Utility program. Unplug and reconnect the module to your PC. 
+
+Connect a 4-pin cable to pins 1-4 of CN4 and connect it to the E951's programming header, pins 1-4.
+Pins five and 6 are not-used. Be sure pin 1 is connected to pin 1, etc. Connect the E951 to a rack
+power source and turn it on. Under the Target menu on the ST-LINK Utility, Connect to the PCB. 
+
+If it cannot connect, check power, check proper connection to the Nucleo PCB, look for soldering 
+problems on the MCU, etc.
+
+Open the firmware file (File > Open file) then under Target, click Program to open the programming
+dialog box. Program the module. It will reset automatically and you should then see the module
+display activate then connect to the E950. If it shows "Disconnected" then the 3-pin cable to the
+E950 is not installed or isn't properly assembled or... did you remember to power up the E950?
+
+If programming is successful, but there is nothing showing on the OLED display, check to see if
+the OLED display pins are all soldered into place. It's easy to forget the other two pins when 
+leveling the PCB to the OLED PCB. Also check proper placement of R9/R12 or R8/13 for routing 
+power and ground to the OLED display.
+
+-------------
+
+Testing the E951
+
+Testing is easy if you have a source of CV/Gate. Please note that the BANK input is -5 to +5 and
+while it isn't CV, 0-5v CV can be used to test the module. Plug the Gate signal into the SHORT
+jack and activate it. You will see the S on the OLED display. If the toggle is set to MOMEN then
+the S will disappear as the Gate signal is deactivated. If set to LATCH then the S will disappear
+when the Gate signal is appliend again. Plug the gate signal to the LONG jack and verify it 
+operates in a similar fashion.
+
+Apply CV to the BANK input and turn the BANK MOD control fully clockwise. Pressing keys across
+an octave will result in multiple changes showing on the display. It will not change with every
+key across the octave and this is normal as it's not a 0-5v CV input, but -5 to +5 voltage swing.
+
+Press SPEAK and the module will speak. Press SPEAK and then press SHORT or LONG and you'll loop
+the audio with short or long sections. If the toggle is set to MOMEN then the loop lasts as long
+as you hold the switch. If it is set to LATCH then the loop lasts until you press the LONG or 
+SHORT switch again.
+
+Turn the SPEECH knob on the E950 to switch speech banks and the selected word and bank number 
+will change on the E951's display. Turn the FINE/INDEX knob to choose the word from the bank. 
+
+If you turn the FINE/INDEX knob to past the current bank's word list then it will start speaking
+the next bank's words in order until the knob is moved back. This is normal.
+
+-------------
+
+Congratulations! You've built and tested an E951. Enjoy!
