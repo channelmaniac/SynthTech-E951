@@ -5,8 +5,8 @@ The repository for the Synthesis Technologies E951 Looping Expander at https://g
 replicated or included here. Go to their Github pages for their files and information on this module. There you will find a front panel layout, 
 gerbers and schematics for the main PCB and switch PCB, and code for it.
 
-Here you will find the missing the input jack PCB, OLED display PCB, Bill of Materials, and information on sizes of components needed to build. You 
-will also find assembly instructions and notes on programming and initial testing. You will NOT find a hex file here to load the STM32 microcontroller. 
+Here you will find the missing input jack PCB, OLED display PCB, Bill of Materials, and information on sizes of components needed to build. You will 
+also find assembly instructions and notes on programming and initial testing. You will NOT find a hex file here to load the STM32 microcontroller. 
 The required files are out on the original GitHub site for you to compile and use. I will not describe how to do that.
 
 I laid out the missing front panel in Front Panel Designer then created one in KiCAD. Those files are in the Hardware folder for you to decide if you
